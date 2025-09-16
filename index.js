@@ -8,9 +8,10 @@ app.engine("hbs", handlebars.engine());
 app.set("view engine", "hbs");
 
 
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-    res.send("Home page");
+    res.render("home", { "layout": false });
 })
 
-app.listen(5000, () => console.log("Server is listening on http://localhost:5000..."));
+app.listen(5000, () => console.log("Server is listening on http://localhost:5000...")); 
