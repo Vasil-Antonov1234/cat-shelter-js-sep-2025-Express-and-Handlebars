@@ -9,10 +9,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Install and Config Handlebars
  - [x] Add resources
  - [x] Show home page
- - [ ] Add css
- - [ ] Extract css into separate js files
- - [ ] Read home html from file system
- - [ ] Read site css from file system
+ - [x] Add css
  - [ ] Add create bread page
  - [ ] Add create cat page
  - [ ] Render view generic function
