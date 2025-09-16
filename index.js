@@ -1,6 +1,7 @@
 import express from "express";
 
 import handlebars from "express-handlebars";
+import { cats } from "./data/dataService.js";
 
 const app = express();
 
@@ -11,7 +12,7 @@ app.set("view engine", "hbs");
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-    res.render("home");
+    res.render("home", { cats });
 })
 
 app.get("/cats/add-cat", (req, res) => {
