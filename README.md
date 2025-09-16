@@ -12,7 +12,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add css
  - [x] Add create cat page
  - [x] Add add breed page
- - [ ] Render view generic function
+ - [x] Create main layout
  - [ ] Render dynamic cats on home page
  - [ ] Add cats from add-cats page
  - [ ] Conditional rendering with cats
