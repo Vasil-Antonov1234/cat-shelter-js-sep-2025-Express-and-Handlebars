@@ -1,0 +1,22 @@
+{
+  "name": "cat-shelter-js-sep-2025-express-and-handlebars",
+  "version": "1.0.0",
+  "description": "Recreate SoftUni JS Back End Course \"Cat Shelter\" using Express and Handlebars",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasil-Antonov1234/cat-shelter-js-sep-2025-Express-and-Handlebars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vasil-Antonov1234/cat-shelter-js-sep-2025-Express-and-Handlebars/issues"
+  },
+  "homepage": "https://github.com/Vasil-Antonov1234/cat-shelter-js-sep-2025-Express-and-Handlebars#readme"
+}
