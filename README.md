@@ -5,7 +5,8 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Initialize NodeJS Project
  - [x] Dev script
  - [x] Debugging
- - [ ] Add Express server
+ - [x] Add Express server
+ - [x] Install and Config Handlebars
  - [ ] Add resources
  - [ ] Show home page
  - [ ] Add css
