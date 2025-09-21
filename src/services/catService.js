@@ -3,7 +3,7 @@ import Cat from "../models/Cat.js";
 
 export default {
     getAll(filter) {
-        return Cat.find();
+        return Cat.find(filter);
     },
 
     getCatById(catId) {
