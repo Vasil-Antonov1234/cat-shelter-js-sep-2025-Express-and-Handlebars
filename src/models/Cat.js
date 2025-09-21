@@ -38,6 +38,12 @@ export default class Cat {
         return result;
     }
 
+    static findBreed() {
+        let result = db.breeds.slice();
+
+        return result;
+    }
+
     async save(filter = {}) {
 
         if (filter._id) {
