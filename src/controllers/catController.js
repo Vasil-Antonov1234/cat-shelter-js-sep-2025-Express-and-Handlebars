@@ -1,12 +1,14 @@
 import { Router } from "express";
 import catService from "../services/catService.js";
+import breedService from "../services/breedService.js";
 
 
 const catController = Router();
 
 
 catController.get("/add-cat", (req, res) => {
-    res.render("addCat");
+    const breeds = breedService.getAll();
+    res.render("addCat", { breeds });
 });
 
 catController.get("/add-breed", (req, res) => {
