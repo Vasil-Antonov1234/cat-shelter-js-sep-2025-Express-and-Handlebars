@@ -42,7 +42,7 @@ catController.get("/search", (req, res) => {
 
     const cats = catService.getAll({search: searchQuery});
     
-    res.render("home", { cats });
+    res.render("home", { cats, searchQuery });
 })
 
 export default catController;
