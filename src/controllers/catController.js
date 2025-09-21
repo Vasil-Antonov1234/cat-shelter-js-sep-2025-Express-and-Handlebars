@@ -37,4 +37,12 @@ catController.post("/:catId/details", async (req, res) => {
     res.redirect("/");
 })
 
+catController.get("/search", (req, res) => {
+    const searchQuery = req.query.text;
+
+    const cats = catService.getAll({search: searchQuery});
+    
+    res.render("home", { cats });
+})
+
 export default catController;
