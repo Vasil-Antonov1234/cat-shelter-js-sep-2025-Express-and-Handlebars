@@ -17,6 +17,12 @@ export default class Cat {
     static find(filter = {}) {
         let result = db.cats.slice();
 
+        if (filter.search) {
+            result = result.filter((cat) => cat.name.toLowerCase().includes(filter.search.toLowerCase()));
+        };
+        
+        
+
         return result;
     }
 
