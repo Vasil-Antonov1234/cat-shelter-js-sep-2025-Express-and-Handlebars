@@ -35,7 +35,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
   - [x] Add service
   - [x] Add model method for creating movie
  - [x] Redirect after creation
- - [x] Add unique id for each movie
+ - [x] Add unique id for each cat
  ---
  ### Edit page
  - [x] Add navigation button for details page
@@ -46,13 +46,12 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Edit cat
  ---
  ### Search
- - [ ] Modify search form
- - [ ] Filter movies
- - [ ] Remember search words
+ - [x] Modify search form
+ - [x] Filter cats
+ - [x] Remember search words
 
 
  
- - [ ] Add unique id to each created cat
  - [ ] Add dynamic breeds
  - [ ] Delete cat (shlter cat button)
  - [ ] Add breed to db
