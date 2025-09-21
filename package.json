@@ -4,8 +4,8 @@
   "description": "Recreate SoftUni JS Back End Course \"Cat Shelter\" using Express and Handlebars",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Vasil-Antonov1234/cat-shelter-js-sep-2025-Express-and-Handlebars#readme",
   "dependencies": {
     "express": "^5.1.0",
-    "express-handlebars": "^8.0.3"
+    "express-handlebars": "^8.0.3",
+    "uuid": "^13.0.0"
   }
 }
