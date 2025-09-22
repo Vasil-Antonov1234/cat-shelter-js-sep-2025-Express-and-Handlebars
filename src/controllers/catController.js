@@ -54,4 +54,10 @@ catController.get("/search", (req, res) => {
     res.render("home", { cats, searchQuery });
 })
 
+catController.get("/:catId/delete", (req, res) => {
+    res.render("catShelter");
+    
+    console.log(req.params.catId);
+})
+
 export default catController;
