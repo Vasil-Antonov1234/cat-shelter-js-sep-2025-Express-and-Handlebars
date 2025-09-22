@@ -25,5 +25,10 @@ export default {
         cat.save({_id: catId});
 
         return cat;
+    },
+
+
+    addBreed(newBreed) {
+        Cat.addBreed(newBreed);
     }
 }

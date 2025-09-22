@@ -61,5 +61,15 @@ export default class Cat {
 
         return this;
     }
+
+    static async addBreed(newBreed) {
+        db.breeds.push(newBreed);
+
+        const dbSerialized = JSON.stringify(db, null, 2);
+
+        await fs.writeFile("./src/data.json", dbSerialized);
+
+        return newBreed;
+    }
     
 }

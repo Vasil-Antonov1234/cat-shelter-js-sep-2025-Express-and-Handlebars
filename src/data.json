@@ -50,11 +50,11 @@
       "breed": "Fluffy Cat"
     },
     {
-      "name": "Test1",
+      "name": "Test",
       "description": "eha",
       "imageUrl": "",
       "breed": "Fluffy Cat",
-      "_id": "d94edc25-fc4c-4744-8c44-88a92357b4ee"
+      "_id": "538726e2-8a1d-4a39-80a5-9ef833617566"
     }
   ],
   "breeds": [
@@ -62,7 +62,8 @@
     "Persian Cat",
     "Siamese Cat",
     "Fluffy Cat",
-    "American Shorthair"
+    "American Shorthair",
+    "Abyssinian"
   ],
   "nextId": 8
 }

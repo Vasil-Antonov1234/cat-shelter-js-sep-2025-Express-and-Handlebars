@@ -49,8 +49,10 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Modify search form
  - [x] Filter cats
  - [x] Remember search words
+ ---
+ ### Bonus
  - [x] Add dynamic breeds
- - [ ] Add breed to db
+ - [x] Add breed to db
  - [ ] Delete cat (shlter cat button)
  - [ ] Show breed on cat create
  - [ ] Show breed on cat edit (selected current breed) (not EASY)
