@@ -14,10 +14,7 @@ export default {
 
 
     create(catData) {
-        const cat = new Cat(catData);
-
-        cat.save();
-        return cat;
+        return Cat.create(catData);
     },
 
     update(catId, newCatData) {
