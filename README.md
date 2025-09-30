@@ -70,7 +70,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add cat model
  - [x] Create cat schema
  - [x] Create cat model
- - [ ] Import file movies to DB
+ - [ ] Import file cats to DB
  - [ ] Fix own propperty handlebars problem with lean method
  - [ ] General fix for own property problem
  - [ ] Refactor details
