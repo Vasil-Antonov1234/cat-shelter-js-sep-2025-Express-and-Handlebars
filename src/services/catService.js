@@ -2,8 +2,10 @@ import Cat from "../models/Cat.js";
 
 
 export default {
-    getAll(filter) {
-        return Cat.find(filter);
+    async getAll(filter) {
+        const result = await Cat.find(filter);
+
+        return result;
     },
 
     getCatById(catId) {

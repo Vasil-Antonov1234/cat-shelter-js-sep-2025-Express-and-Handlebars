@@ -6,7 +6,7 @@ const homeController = Router();
 
 
 homeController.get("/", async (req, res) => {
-    const cats = await catService.getAll();   
+    const cats = await catService.getAll();
     
     res.render("home", { cats });
 })
