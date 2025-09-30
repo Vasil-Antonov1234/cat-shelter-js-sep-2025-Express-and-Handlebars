@@ -1,10 +1,25 @@
 import express from "express";
 import handlebars from "express-handlebars";
 import routes from "./routes.js";
+import mongoose from "mongoose";
 
 
 
 const app = express();
+
+const url = "mongodb://localhost:27017";
+
+
+
+try {
+    await mongoose.connect(url, {
+        dbName: "cat-shelter"
+    });
+
+    console.log("Successfully connected to DB");
+} catch (error) {
+    console.error("Cannot connect to DB, ", error.message);
+}
 
 app.engine("hbs", handlebars.engine({ extname: "hbs" }));
 

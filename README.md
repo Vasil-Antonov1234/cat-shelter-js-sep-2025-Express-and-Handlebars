@@ -1,7 +1,7 @@
 # cat-shelter-js-sep-2025-Express-and-Handlebars
 Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
 
-## Steps
+## Workshop 1
 
 ### Setup
  - [x] Initialize project
@@ -58,3 +58,21 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
   - [x] Render catShelter page
   - [ ] Delete cat from data.json
  - [ ] Show breed on cat edit (selected current breed) (not EASY)
+
+ ## Workshop 2 - MongoDB Database
+
+ ### Setup Database
+ - [x] Install MongoDB
+ - [x] Install Mongoose
+ - [x] Connect to DB
+
+ ### Refactor movies to use Mongoose
+ - [x] Add cat model
+ - [x] Create cat schema
+ - [x] Create cat model
+ - [ ] Import file movies to DB
+ - [ ] Fix own propperty handlebars problem with lean method
+ - [ ] General fix for own property problem
+ - [ ] Refactor details
+ - [ ] Refactor create
+ - [ ] Refactor search
