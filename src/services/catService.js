@@ -2,14 +2,22 @@ import Cat from "../models/Cat.js";
 
 
 export default {
-    async getAll(filter) {
-        const result = await Cat.find(filter);
+    async getAll(filter = {}) {
 
-        return result;
+        // let cats = await Cat.find();
+        let query = Cat.find();
+
+        if (filter.name) {
+            query = query.find({ name: { $regex: filter.name, $options: "i"}});
+            // cats.forEach((cat) => console.log(cat.name));
+            // cats = cats.filter((cat) => cat.name.includes(filter.name));
+        };
+
+        return query;
     },
 
     getCatById(catId) {
-        return Cat.findOne({_id: catId});
+        return Cat.findById(catId);
     },
 
 
@@ -21,7 +29,7 @@ export default {
 
         const cat = new Cat(newCatData);
 
-        cat.save({_id: catId});
+        cat.save({ _id: catId });
 
         return cat;
     },
