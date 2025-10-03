@@ -66,7 +66,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Install Mongoose
  - [x] Connect to DB
 
- ### Refactor movies to use Mongoose
+ ### Refactor cats to use Mongoose
  - [x] Add cat model
  - [x] Create cat schema
  - [x] Create cat model
@@ -81,6 +81,3 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add breed service
  - [x] Add breed controller
  - [x] Create add breed functionality
-
- ### Attach Breed to Cat (relation)
- - [x] Add relation between Cast and Movie

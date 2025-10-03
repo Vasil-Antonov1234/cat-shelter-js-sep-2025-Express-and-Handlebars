@@ -4,10 +4,7 @@ const catSchema = new Schema({
     name: String,
     imageUrl: String,
     description: String,
-    breed: {
-        type: Types.ObjectId,
-        ref: "Breed"
-    }
+    breed: String
 });
 
 const Cat = model("Cat", catSchema);

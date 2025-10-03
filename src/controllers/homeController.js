@@ -1,12 +1,13 @@
 import { Router } from "express";
 import catService from "../services/catService.js";
+import breedService from "../services/breedService.js";
 
 const homeController = Router();
 
 
 
 homeController.get("/", async (req, res) => {
-    const cats = await catService.getAll();
+    let cats = await catService.getAll();
     
     res.render("home", { cats });
 })

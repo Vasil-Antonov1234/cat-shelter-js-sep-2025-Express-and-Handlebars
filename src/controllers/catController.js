@@ -12,6 +12,8 @@ catController.get("/add-cat", async (req, res) => {
 });
 
 catController.post("/add-cat", async (req, res) => {
+    
+    
     await catService.create(req.body);
 
     res.redirect("/");
