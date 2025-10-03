@@ -81,3 +81,6 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add breed service
  - [x] Add breed controller
  - [x] Create add breed functionality
+
+ ### Attach Breed to Cat (relation)
+ - [x] Add relation between Cast and Movie
