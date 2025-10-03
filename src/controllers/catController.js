@@ -6,8 +6,8 @@ import breedService from "../services/breedService.js";
 const catController = Router();
 
 
-catController.get("/add-cat", (req, res) => {
-    const breeds = breedService.getAll();
+catController.get("/add-cat", async (req, res) => {
+    const breeds = await breedService.getAll();
     res.render("addCat", { breeds });
 });
 
