@@ -11,17 +11,6 @@ catController.get("/add-cat", (req, res) => {
     res.render("addCat", { breeds });
 });
 
-catController.get("/add-breed", (req, res) => {
-    res.render("addBreed");
-});
-
-catController.post("/add-breed", (req, res) => {
-    const newBreed = req.body.breed;
-    catService.addBreed(newBreed);
-
-    res.redirect("/");
-})
-
 catController.post("/add-cat", async (req, res) => {
     await catService.create(req.body);
 

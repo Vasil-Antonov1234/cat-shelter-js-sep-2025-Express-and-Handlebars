@@ -1,7 +1,7 @@
-import Cat from "../models/Cat.js";
+import Breed from "../models/Breed.js";
 
 export default {
-    getAll() {
-        return [];
+    create(newBreed) {
+        return Breed.create(newBreed);
     }
 }
