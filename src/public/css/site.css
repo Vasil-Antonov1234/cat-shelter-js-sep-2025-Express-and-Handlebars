@@ -98,6 +98,24 @@ form button:hover {
     color: lightblue;
 }
 
+form a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: orange;
+    margin-inline: 174px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+form a:hover {
+    background-color: bisque;
+    color: orange;
+}
+
 .cats {
     margin-left: 5rem;
     margin-right: 5rem;
