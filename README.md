@@ -90,3 +90,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
 ### Refactor edit cat page
  - [x] Show breed dynamically
  - [x] Handle edit cat
+
+### Handle delete (shelter) cat
+ - [x] Handle delete form on detail page
+ - [ ] handle delete functionality
