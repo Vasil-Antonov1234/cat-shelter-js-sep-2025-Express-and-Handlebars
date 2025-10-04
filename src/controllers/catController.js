@@ -24,7 +24,9 @@ catController.get("/:catId/edit", async (req, res) => {
     const catId = req.params.catId;
     const cat = await catService.getCatById(catId);
 
-    res.render("editCat", { cat })
+    const breedsViewData = getCatBreedViewData(cat.breed);
+
+    res.render("editCat", { cat, breeds: breedsViewData })
 });
 
 catController.post("/:catId/edit", async (req, res) => {
@@ -48,10 +50,24 @@ catController.get("/:catId/details", async (req, res) => {
     const catId = req.params.catId;
     const cat = await catService.getCatById(catId);
 
-    const breeds = await breedService.getAll();
     
-    
-    res.render("details", { cat, breeds });
+    res.render("details", { cat });
 })
+
+
+
+function getCatBreedViewData(selectedBreed) {
+
+    const breeds = [
+        { value: "Bombay Cat", lable: "Bombay Cat" },
+        { value: "Persian Cat", lable: "Persian Cat" },
+        { value: "Siamese Cat", lable: "Siamese Cat" },
+        { value: "Fluffy Cat", lable: "Fluffy Cat" },
+        { value: "American Shorthair", lable: "American Shorthair" }
+    ];
+
+    const viewData = breeds.map((breed) => ({...breed, selected: selectedBreed === breed.value ? "selected" : ""}));
+    return viewData;
+}
 
 export default catController;
