@@ -1,7 +1,7 @@
 # cat-shelter-js-sep-2025-Express-and-Handlebars
 Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
 
-## Steps
+## Steps - 1
 
 ### Setup
  - [x] Initialize project
@@ -59,7 +59,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
   - [ ] Delete cat from data.json
  - [ ] Show breed on cat edit (selected current breed) (not EASY)
 
- ## Workshop 2 - MongoDB Database
+ ## Step 2 - MongoDB Database
 
  ### Setup Database
  - [x] Install MongoDB
@@ -94,3 +94,31 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
 ### Handle delete (shelter) cat
  - [x] Handle delete form on detail page
  - [x] Handle delete functionality
+
+ ### Bonus
+ - [ ] Add relation freom Cat to Breed
+
+ ## Step 3 - Session and Authentication
+
+ ## Registration
+ - [ ] Add registration button
+ - [ ] Add new controller "authController"
+ - [ ] Add registration page
+ - [ ] Add User model
+ - [ ] Add User service
+ - [ ] Create User in DB
+ - [ ] Add password hashing
+
+ ## Login
+ - [ ] Add login button
+ - [ ] Add login page
+ - [ ] Handle login page
+ - [ ] Validate User
+ - [ ] Validate password
+ - [ ] Create token
+ - [ ] Return token to client
+
+ ## Logout
+ - [ ] Add logout buton
+ - [ ] Add logout action
+ - [ ] Clear cookie
