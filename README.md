@@ -93,4 +93,4 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
 
 ### Handle delete (shelter) cat
  - [x] Handle delete form on detail page
- - [ ] handle delete functionality
+ - [x] Handle delete functionality

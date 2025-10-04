@@ -32,5 +32,10 @@ export default {
 
     addBreed(newBreed) {
         Cat.addBreed(newBreed);
+    },
+
+    deleteCat(catId) {
+        
+        return Cat.findByIdAndDelete(catId);
     }
 }

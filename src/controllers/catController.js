@@ -55,6 +55,14 @@ catController.get("/:catId/details", async (req, res) => {
     res.render("details", { cat });
 })
 
+catController.post("/:catId/details", async (req, res) => {
+    const catId = req.params.catId;
+
+    await catService.deleteCat(catId);
+
+    res.redirect("/");
+})
+
 
 
 function getCatBreedViewData(selectedBreed) {
