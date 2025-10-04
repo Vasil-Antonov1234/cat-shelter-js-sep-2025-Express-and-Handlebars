@@ -83,4 +83,9 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Create add breed functionality
 
  ### Refactor edit cat page
- - [ ] Show breed dynamically
+ - [x] Show breed dynamically
+
+ ### Add detail cat page
+ - [x] Change home page
+ - [x] Add detail cat page
+ - [x] Show dateils dynamically on detail page

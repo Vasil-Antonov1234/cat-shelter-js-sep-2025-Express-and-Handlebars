@@ -20,7 +20,7 @@ catController.post("/add-cat", async (req, res) => {
 })
 
 
-catController.get("/:catId/details", async (req, res) => {
+catController.get("/:catId/edit", async (req, res) => {
     const catId = req.params.catId;
     const cat = await catService.getCatById(catId);
 
@@ -28,7 +28,7 @@ catController.get("/:catId/details", async (req, res) => {
     res.render("editCat", { cat })
 });
 
-catController.post("/:catId/details", async (req, res) => {
+catController.post("/:catId/edit", async (req, res) => {
     const catId = req.params.catId;
     const newCatData = req.body;
     catService.update(catId, newCatData);
@@ -45,10 +45,11 @@ catController.get("/search", async (req, res) => {
     res.render("home", { cats, searchQuery });
 })
 
-catController.get("/:catId/delete", (req, res) => {
-    res.render("catShelter");
+catController.get("/:catId/details", async (req, res) => {
+    const catId = req.params.catId;
+    const cat = await catService.getCatById(catId);
     
-    console.log(req.params.catId);
+    res.render("catShelter", { cat });
 })
 
 export default catController;

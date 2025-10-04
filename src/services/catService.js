@@ -15,7 +15,7 @@ export default {
 
         return query;
     },
-
+    
     getCatById(catId) {
         return Cat.findById(catId);
     },
