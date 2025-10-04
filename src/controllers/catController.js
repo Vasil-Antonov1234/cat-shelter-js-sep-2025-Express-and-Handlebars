@@ -24,7 +24,6 @@ catController.get("/:catId/edit", async (req, res) => {
     const catId = req.params.catId;
     const cat = await catService.getCatById(catId);
 
-
     res.render("editCat", { cat })
 });
 
@@ -48,8 +47,11 @@ catController.get("/search", async (req, res) => {
 catController.get("/:catId/details", async (req, res) => {
     const catId = req.params.catId;
     const cat = await catService.getCatById(catId);
+
+    const breeds = await breedService.getAll();
     
-    res.render("catShelter", { cat });
+    
+    res.render("details", { cat, breeds });
 })
 
 export default catController;

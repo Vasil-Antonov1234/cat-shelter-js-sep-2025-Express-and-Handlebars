@@ -6,8 +6,13 @@
     <label for="description">Description</label>
     <textarea id="description" disabled>{{cat.description}}</textarea>
     <label for="group">Breed</label>
-    <select id="group" disabled>
-        <option value="">Fluffy Cat</option>
+    <select id="group">
+        {{#each breeds}}
+            <option value="">{{breed}}</option>
+        {{/each}}
+        
+        
+        {{!-- <option value="">Fluffy Cat</option> --}}
     </select>
     <a href="/cats/{{cat.id}}/edit">CHANGE INFO</a>
     <button id="test">SHELTER THE CAT</button>    
