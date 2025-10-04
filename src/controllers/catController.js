@@ -31,8 +31,9 @@ catController.get("/:catId/edit", async (req, res) => {
 
 catController.post("/:catId/edit", async (req, res) => {
     const catId = req.params.catId;
-    const newCatData = req.body;
-    catService.update(catId, newCatData);
+    const catData = req.body;
+    
+    await catService.update(catData, catId);
 
 
     res.redirect("/");

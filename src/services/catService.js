@@ -25,13 +25,8 @@ export default {
         return Cat.create(catData);
     },
 
-    update(catId, newCatData) {
-
-        const cat = new Cat(newCatData);
-
-        cat.save({ _id: catId });
-
-        return cat;
+    update(catData, catId) {
+        return Cat.findByIdAndUpdate(catId, catData);
     },
 
 
