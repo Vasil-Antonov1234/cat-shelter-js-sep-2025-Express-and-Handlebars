@@ -100,10 +100,10 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
 
  ## Step 3 - Session and Authentication
 
- ## Registration
- - [x] Add registration button
+ ## Register
+ - [x] Add register button
  - [x] Add new controller "authController"
- - [ ] Add registration page
+ - [x] Add regster page
  - [ ] Add User model
  - [ ] Add User service
  - [ ] Create User in DB
