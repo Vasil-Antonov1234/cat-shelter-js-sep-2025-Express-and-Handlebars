@@ -96,14 +96,14 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Handle delete functionality
 
  ### Bonus
- - [ ] Add relation freom Cat to Breed
+ - [ ] Add relation from Cat to Breed
 
  ## Step 3 - Session and Authentication
 
  ## Registration
- - [ ] Add registration button
- - [ ] Add new controller "authController"
+ - [x] Add registration button
  - [ ] Add registration page
+ - [ ] Add new controller "authController"
  - [ ] Add User model
  - [ ] Add User service
  - [ ] Create User in DB
