@@ -1,6 +1,5 @@
 import { Router } from "express";
 import catService from "../services/catService.js";
-import breedService from "../services/breedService.js";
 
 const homeController = Router();
 

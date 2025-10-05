@@ -8,7 +8,7 @@ const catController = Router();
 
 catController.get("/add-cat", async (req, res) => {
     const breeds = await breedService.getAll();
-    res.render("addCat", { breeds });
+    res.render("cats/addCat", { breeds });
 });
 
 catController.post("/add-cat", async (req, res) => {
@@ -26,7 +26,7 @@ catController.get("/:catId/edit", async (req, res) => {
 
     const breedsViewData = getCatBreedViewData(cat.breed);
 
-    res.render("editCat", { cat, breeds: breedsViewData })
+    res.render("cats/editCat", { cat, breeds: breedsViewData })
 });
 
 catController.post("/:catId/edit", async (req, res) => {
@@ -52,7 +52,7 @@ catController.get("/:catId/details", async (req, res) => {
     const cat = await catService.getCatById(catId);
 
     
-    res.render("details", { cat });
+    res.render("cats/details", { cat });
 })
 
 catController.post("/:catId/details", async (req, res) => {

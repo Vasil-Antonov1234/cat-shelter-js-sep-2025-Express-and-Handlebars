@@ -6,7 +6,7 @@ const breedController = Router();
 
 
 breedController.get("/add-breed", (req, res) => {
-    res.render("addBreed");
+    res.render("cats/addBreed");
 });
 
 
