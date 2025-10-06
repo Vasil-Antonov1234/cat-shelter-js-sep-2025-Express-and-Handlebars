@@ -112,7 +112,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
 
  ## Login
  - [x] Add login button
- - [ ] Add login page
+ - [x] Add login page
  - [ ] Handle login page
  - [ ] Validate User
  - [ ] Validate password
