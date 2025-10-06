@@ -3,7 +3,7 @@ import { model, Schema } from "mongoose";
 const breedSchema = new Schema ({
     breed: {
         type: String,
-        require: [true, "Breed is required"]
+        required: [true, "Breed is required!"]
     }
 });
 
