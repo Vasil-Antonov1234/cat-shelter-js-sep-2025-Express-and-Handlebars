@@ -108,7 +108,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add User model
  - [x] Add User service
  - [x] Create User in DB
- - [ ] Add password hashing
+ - [x] Add password hashing
 
  ## Login
  - [x] Add login button
