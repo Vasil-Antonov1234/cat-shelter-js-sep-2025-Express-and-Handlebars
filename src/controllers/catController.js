@@ -17,9 +17,10 @@ catController.get("/add-cat", isAuth, async (req, res) => {
 });
 
 catController.post("/add-cat", isAuth, async (req, res) => {
+    const catData = req.body;
+    const userId = req.user.id;
     
-    
-    await catService.create(req.body);
+    await catService.create(catData, userId);
 
     res.redirect("/");
 })

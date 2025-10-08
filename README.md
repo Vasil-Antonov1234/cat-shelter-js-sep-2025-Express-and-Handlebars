@@ -114,10 +114,10 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add login button
  - [x] Add login page
  - [x] Handle login page
- - [ ] Validate User
- - [ ] Validate password
- - [ ] Create token
- - [ ] Return token to client
+ - [x] Validate User
+ - [x] Validate password
+ - [x] Create token
+ - [x] Return token to client
 
  ### Logout
  - [x] Add logout button
@@ -133,3 +133,9 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  ### Dynamic Navigation
  - [x] Group navigation by user type (all, authenticated and guest);
  - [x] Add auth info to Handlebars context
+
+ ### Show dynamic buttons on details page
+ - [x] Add edit and delete buttons on details page
+ - [x] Add creator as relation to Cats
+ - [ ] Add user as creator on cat create
+ - [ ] Show buttons only for creators

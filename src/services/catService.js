@@ -21,8 +21,11 @@ export default {
     },
 
 
-    create(catData) {
-        return Cat.create(catData);
+    create(catData, userId) {
+        return Cat.create({
+            ...catData,
+            creator: userId
+        });
     },
 
     update(catData, catId) {
