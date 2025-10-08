@@ -121,5 +121,5 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
 
  ## Logout
  - [x] Add logout button
- - [ ] Add logout action
- - [ ] Clear cookie
+ - [x] Add logout action
+ - [x] Clear cookie
