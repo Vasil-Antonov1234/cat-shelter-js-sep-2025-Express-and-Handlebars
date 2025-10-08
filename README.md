@@ -129,3 +129,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add authMiddleware
  - [x] Add isAuth route guard
  - [x] Add isGuest route guard
+
+ ### Dynamic Navigation
+ - [x] Group navigation by user type (all, authenticated and guest);
+ - [x] Add auth info to Handlebars context
