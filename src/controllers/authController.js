@@ -1,5 +1,5 @@
 import { Router } from "express";
-import userService from "../services/userService.js";
+import authrService from "../services/authrService.js";
 
 const authController = Router();
 
@@ -10,7 +10,7 @@ authController.get("/register", (req, res) => {
 authController.post("/register", async (req, res) => {
     const userData = req.body;
 
-    await userService.register(userData);
+    await authrService.register(userData);
     res.redirect("/login");
 })
 
@@ -20,7 +20,7 @@ authController.get("/login", (req, res) => {
 });
 
 authController.post("/login", async (req, res) => {
-    const token = await userService.login(req.body);
+    const token = await authrService.login(req.body);
 
     res.cookie("auth", token);
 

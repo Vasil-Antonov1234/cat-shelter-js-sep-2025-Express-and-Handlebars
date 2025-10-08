@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Vasil-Antonov1234/cat-shelter-js-sep-2025-Express-and-Handlebars#readme",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.3",
     "jsonwebtoken": "^9.0.2",

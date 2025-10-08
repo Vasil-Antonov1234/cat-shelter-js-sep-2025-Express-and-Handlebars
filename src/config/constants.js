@@ -1,0 +1,1 @@
+export const JWT_SECTER = "asdsdfgfdw456578usedawrfg6578oiu";

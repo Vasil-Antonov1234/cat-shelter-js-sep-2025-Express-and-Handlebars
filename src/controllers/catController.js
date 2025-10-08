@@ -5,9 +5,13 @@ import breedService from "../services/breedService.js";
 
 const catController = Router();
 
-
 catController.get("/add-cat", async (req, res) => {
     const breeds = await breedService.getAll();
+
+    if (req.isAuthenticated) {
+        console.log(req.user.email);
+    }
+
     res.render("cats/addCat", { breeds });
 });
 
