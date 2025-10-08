@@ -139,3 +139,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add creator as relation to Cats
  - [x] Add user as creator on cat create
  - [x] Show buttons only for creators
+
+ ### Bonus
+ - [ ] Automatic login on register
+ - [ ] Filter breed if it is already choosen
