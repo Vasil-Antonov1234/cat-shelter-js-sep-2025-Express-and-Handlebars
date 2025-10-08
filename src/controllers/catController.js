@@ -57,7 +57,8 @@ catController.get("/:catId/details", isAuth, async (req, res) => {
     const catId = req.params.catId;
     const cat = await catService.getCatById(catId);
 
-    const isCreator = req.user?.id && cat.creator == req.user.id;
+    // const isCreator = req.user?.id && cat.creator == req.user.id;
+    const isCreator = cat.creator && cat.creator.equals(req.user?.id);
     
     res.render("cats/details", { cat, isCreator });
 })
