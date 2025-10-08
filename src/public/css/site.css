@@ -116,6 +116,20 @@ form a:hover {
     color: orange;
 }
 
+.login-register {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: -14px;
+}
+
+.login-register a {
+    text-decoration: none;
+    margin-left: 4px;
+    font-weight: 700;
+}
+
+
 .cats {
     margin-left: 5rem;
     margin-right: 5rem;
