@@ -127,5 +127,5 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  ### Authorization
  - [x] Install cookie-parser
  - [x] Add authMiddleware
- - [ ] Add isAuth route guard
+ - [x] Add isAuth route guard
  - [ ] Add isGuest route guard

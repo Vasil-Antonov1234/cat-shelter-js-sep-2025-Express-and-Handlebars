@@ -1,11 +1,12 @@
 import { Router } from "express";
 import catService from "../services/catService.js";
 import breedService from "../services/breedService.js";
+import { isAuth } from "../middlewares/authMiddleware.js";
 
 
 const catController = Router();
 
-catController.get("/add-cat", async (req, res) => {
+catController.get("/add-cat", isAuth, async (req, res) => {
     const breeds = await breedService.getAll();
 
     if (req.isAuthenticated) {
@@ -15,7 +16,7 @@ catController.get("/add-cat", async (req, res) => {
     res.render("cats/addCat", { breeds });
 });
 
-catController.post("/add-cat", async (req, res) => {
+catController.post("/add-cat", isAuth, async (req, res) => {
     
     
     await catService.create(req.body);
@@ -51,7 +52,7 @@ catController.get("/search", async (req, res) => {
     res.render("home", { cats, searchQuery });
 })
 
-catController.get("/:catId/details", async (req, res) => {
+catController.get("/:catId/details", isAuth, async (req, res) => {
     const catId = req.params.catId;
     const cat = await catService.getCatById(catId);
 
@@ -59,7 +60,7 @@ catController.get("/:catId/details", async (req, res) => {
     res.render("cats/details", { cat });
 })
 
-catController.post("/:catId/details", async (req, res) => {
+catController.post("/:catId/details", isAuth, async (req, res) => {
     const catId = req.params.catId;
 
     await catService.deleteCat(catId);
