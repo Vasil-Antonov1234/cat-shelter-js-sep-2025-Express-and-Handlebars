@@ -137,5 +137,5 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  ### Show dynamic buttons on details page
  - [x] Add edit and delete buttons on details page
  - [x] Add creator as relation to Cats
- - [ ] Add user as creator on cat create
- - [ ] Show buttons only for creators
+ - [x] Add user as creator on cat create
+ - [x] Show buttons only for creators

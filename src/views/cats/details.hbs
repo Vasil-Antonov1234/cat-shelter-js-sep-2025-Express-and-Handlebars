@@ -10,6 +10,8 @@
     {{!-- <select id="group">
         <option value="{{cat.breed}}">{{cat.breed}}</option>
     </select> --}}
-    <a href="/cats/{{cat.id}}/edit">CHANGE INFO</a>
-    <button>SHELTER THE CAT</button>    
+    {{#if isCreator}}
+        <a href="/cats/{{cat.id}}/edit">CHANGE INFO</a>
+        <button>SHELTER THE CAT</button>
+    {{/if}}    
 </form>
