@@ -63,7 +63,7 @@ catController.get("/:catId/details", isAuth, async (req, res) => {
     res.render("cats/details", { cat, isCreator });
 })
 
-catController.post("/:catId/details", isAuth, async (req, res) => {
+catController.get("/:catId/delete", isAuth, async (req, res) => {
     const catId = req.params.catId;
 
     await catService.deleteCat(catId);

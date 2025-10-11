@@ -98,11 +98,11 @@ form button:hover {
     color: lightblue;
 }
 
-form a {
+form .edit{
     text-decoration: none;
     padding: 5px;
     background-color: orange;
-    margin-inline: 174px;
+    margin-inline: 78px;
     margin-bottom: 10px;
     border-radius: 7px;
     color: white;
@@ -111,9 +111,32 @@ form a {
     text-align: center;
 }
 
-form a:hover {
+form .edit:hover {
     background-color: bisque;
     color: orange;
+}
+
+form .dell{
+    text-decoration: none;
+    padding: 5px;
+    background-color: red;
+    margin-inline: 78px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+form .dell:hover {
+    background-color: rgb(245, 155, 157);
+    color: red;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
 }
 
 .login-register {

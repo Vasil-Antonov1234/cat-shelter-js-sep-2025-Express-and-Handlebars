@@ -11,7 +11,10 @@
         <option value="{{cat.breed}}">{{cat.breed}}</option>
     </select> --}}
     {{#if isCreator}}
-        <a href="/cats/{{cat.id}}/edit">CHANGE INFO</a>
-        <button>SHELTER THE CAT</button>
+        <div class="buttons-container">
+            <a href="/cats/{{cat.id}}/edit" class="edit">CHANGE INFO</a>
+            <a href="/cats/{{cat.id}}/delete" class="dell">SHELTER THE CAT</a>
+            {{!-- <button>SHELTER THE CAT</button> --}}
+        </div>
     {{/if}}    
 </form>
