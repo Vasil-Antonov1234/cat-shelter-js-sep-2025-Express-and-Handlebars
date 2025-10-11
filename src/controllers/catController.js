@@ -65,8 +65,11 @@ catController.get("/:catId/details", isAuth, async (req, res) => {
 
 catController.get("/:catId/delete", isAuth, async (req, res) => {
     const catId = req.params.catId;
+    const cat = await catService.getCatById(catId);
 
-    await catService.deleteCat(catId);
+    if (cat.creator && cat.creator.equals(req.user?.id)) {
+        await catService.deleteCat(catId);
+    }
 
     res.redirect("/");
 })

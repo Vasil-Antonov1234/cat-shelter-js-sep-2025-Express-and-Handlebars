@@ -141,5 +141,5 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Show buttons only for creators
 
  ### Bonus
- - [ ] Automatic login on register
+ - [x] Automatic login on register
  - [ ] Filter breed if it is already choosen
