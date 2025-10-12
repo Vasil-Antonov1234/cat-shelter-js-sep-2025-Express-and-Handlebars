@@ -146,5 +146,5 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  ## Step 4 - Error handling and validation
  - [x] Validate cat
  - [x] Validate breed
- - [ ] Validate user
+ - [x] Validate user
  - [ ] BONUS: Validate passwords in model
