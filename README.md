@@ -150,7 +150,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [ ] BONUS: Validate passwords in model
 
  ## Error handling
- - [ ] Add static error notification container
+ - [x] Add static error notification container
  - [ ] User register error handling
  - [ ] Render error container conditionally
  - [ ] Retain register form data on error
