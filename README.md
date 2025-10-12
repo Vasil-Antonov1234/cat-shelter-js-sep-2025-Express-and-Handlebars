@@ -148,3 +148,13 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Validate breed
  - [x] Validate user
  - [ ] BONUS: Validate passwords in model
+
+ ## Error handling
+ - [ ] Add static error notification container
+ - [ ] User register error handling
+ - [ ] Render error container conditionally
+ - [ ] Retain register form data on error
+ - [ ] Extract get error message
+ - [ ] User login error handling
+ - [ ] Create cat error handling
+ - [ ] Breed create error handling
