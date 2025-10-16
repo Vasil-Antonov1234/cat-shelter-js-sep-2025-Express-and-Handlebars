@@ -152,7 +152,7 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  ## Error handling
  - [x] Add static error notification container
  - [x] User register error handling
- - [ ] Render error container conditionally
+ - [x] Render error container conditionally
  - [ ] Retain register form data on error
  - [ ] Extract get error message
  - [ ] User login error handling

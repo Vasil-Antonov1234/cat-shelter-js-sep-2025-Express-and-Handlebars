@@ -32,7 +32,9 @@
 
     <main>
         <div class="error-container">
-            <p>{{error}}</p>
+            {{#if error}}
+                <p>{{error}}</p>
+            {{/if}}
         </div>
 
         {{{body}}}
