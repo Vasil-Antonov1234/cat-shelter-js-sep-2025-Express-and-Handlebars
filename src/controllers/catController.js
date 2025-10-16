@@ -9,10 +9,6 @@ const catController = Router();
 catController.get("/add-cat", isAuth, async (req, res) => {
     const breeds = await breedService.getAll();
 
-    if (req.isAuthenticated) {
-        console.log(req.user.email);
-    }
-
     res.render("cats/addCat", { breeds });
 });
 
@@ -82,11 +78,11 @@ catController.get("/:catId/delete", isAuth, async (req, res) => {
 function getCatBreedViewData(selectedBreed) {
 
     const breeds = [
-        { value: "Bombay Cat", lable: "Bombay Cat" },
-        { value: "Persian Cat", lable: "Persian Cat" },
-        { value: "Siamese Cat", lable: "Siamese Cat" },
-        { value: "Fluffy Cat", lable: "Fluffy Cat" },
-        { value: "American Shorthair", lable: "American Shorthair" }
+        { value: "Bombay Cat", label: "Bombay Cat" },
+        { value: "Persian Cat", label: "Persian Cat" },
+        { value: "Siamese Cat", label: "Siamese Cat" },
+        { value: "Fluffy Cat", label: "Fluffy Cat" },
+        { value: "American Shorthair", label: "American Shorthair" }
     ];
 
     const viewData = breeds.map((breed) => ({ ...breed, selected: selectedBreed === breed.value ? "selected" : "" }));
