@@ -2,7 +2,7 @@ import { Router } from "express";
 import catService from "../services/catService.js";
 import breedService from "../services/breedService.js";
 import { isAuth } from "../middlewares/authMiddleware.js";
-
+import { getErrorMessage } from "../utils/errorUtils.js";
 
 const catController = Router();
 
@@ -19,12 +19,16 @@ catController.get("/add-cat", isAuth, async (req, res) => {
 catController.post("/add-cat", isAuth, async (req, res) => {
     const catData = req.body;
     const userId = req.user.id;
-    
-    await catService.create(catData, userId);
+    const breeds = await breedService.getAll();
 
-    res.redirect("/");
-})
-
+    try {
+        await catService.create(catData, userId);
+        res.redirect("/");
+    } catch (error) {
+        const errorMessage = getErrorMessage(error);
+        res.status(400).render("cats/addCat", { error: errorMessage, cat: catData, breeds });
+    };
+});
 
 catController.get("/:catId/edit", async (req, res) => {
     const catId = req.params.catId;
@@ -38,9 +42,8 @@ catController.get("/:catId/edit", async (req, res) => {
 catController.post("/:catId/edit", async (req, res) => {
     const catId = req.params.catId;
     const catData = req.body;
-    
-    await catService.update(catData, catId);
 
+    await catService.update(catData, catId);
 
     res.redirect(`/cats/${catId}/details`);
 })
@@ -48,8 +51,8 @@ catController.post("/:catId/edit", async (req, res) => {
 catController.get("/search", async (req, res) => {
     const searchQuery = req.query.text;
 
-    const cats = await catService.getAll({name: searchQuery});
-    
+    const cats = await catService.getAll({ name: searchQuery });
+
     res.render("home", { cats, searchQuery });
 })
 
@@ -59,9 +62,9 @@ catController.get("/:catId/details", isAuth, async (req, res) => {
 
     // const isCreator = req.user?.id && cat.creator == req.user.id;
     const isCreator = cat.creator && cat.creator.equals(req.user?.id);
-    
-    console.log(cat.creator)
-    console.log(req.user)
+
+    // console.log(cat.creator)
+    // console.log(req.user)
     res.render("cats/details", { cat, isCreator });
 })
 
@@ -76,8 +79,6 @@ catController.get("/:catId/delete", isAuth, async (req, res) => {
     res.redirect("/");
 })
 
-
-
 function getCatBreedViewData(selectedBreed) {
 
     const breeds = [
@@ -88,7 +89,7 @@ function getCatBreedViewData(selectedBreed) {
         { value: "American Shorthair", lable: "American Shorthair" }
     ];
 
-    const viewData = breeds.map((breed) => ({...breed, selected: selectedBreed === breed.value ? "selected" : ""}));
+    const viewData = breeds.map((breed) => ({ ...breed, selected: selectedBreed === breed.value ? "selected" : "" }));
     return viewData;
 }
 
