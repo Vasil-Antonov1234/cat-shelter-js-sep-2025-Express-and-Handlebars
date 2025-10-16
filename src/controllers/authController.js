@@ -2,8 +2,6 @@ import { Router } from "express";
 import authrService from "../services/authrService.js";
 import { isAuth, isGuest } from "../middlewares/authMiddleware.js";
 
-
-
 const authController = Router();
 
 authController.get("/register", isGuest, (req, res) => {
@@ -13,15 +11,19 @@ authController.get("/register", isGuest, (req, res) => {
 authController.post("/register", isGuest, async (req, res) => {
     const userData = req.body;
 
-    const token = await authrService.register(userData);
+    try {
+        const token = await authrService.register(userData);
+        res.cookie("auth", token);
+        res.redirect("/");
+    } catch (error) {
+        const errorMessage = Object.values(error.errors).at(0).message;
+        res.render("auth/register", { error: errorMessage });
+    };
 
-    res.cookie("auth", token);
-
-    res.redirect("/");
 })
 
 authController.get("/login", isGuest, (req, res) => {
-   
+
     res.render("auth/login");
 });
 
@@ -38,6 +40,5 @@ authController.get("/logout", isAuth, (req, res) => {
 
     res.redirect("/");
 })
-
 
 export default authController;
