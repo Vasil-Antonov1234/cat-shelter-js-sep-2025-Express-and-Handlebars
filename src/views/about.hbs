@@ -1,1 +1,85 @@
- <h1>About page</h1>
+<body>
+  <main class="container" role="main">
+    <header>
+      <div class="logo" aria-hidden>CS</div>
+      <div>
+        <h1>Cat Shelter</h1>
+        <p class="lead">We rescue, rehabilitate, and rehome cats — giving every feline a safe, loving second chance.</p>
+      </div>
+    </header>
+
+    <section class="grid" aria-labelledby="about-heading">
+      <article class="card">
+        <h2 id="about-heading">About Us</h2>
+        <p class="muted">Founded by local volunteers, Cat Shelter operates as a small, community-focused rescue. We believe every cat deserves medical care, a secure place to recover, and a fitting forever home. We prioritise low-stress handling, behavioural rehabilitation and transparent adoptions.</p>
+
+        <div class="stats" aria-hidden>
+          <div class="stat">
+            <span class="muted">Cats rescued</span>
+            <strong>1,248</strong>
+          </div>
+          <div class="stat">
+            <span class="muted">Adoptions this year</span>
+            <strong>342</strong>
+          </div>
+          <div class="stat">
+            <span class="muted">Active volunteers</span>
+            <strong>58</strong>
+          </div>
+        </div>
+
+        <h3 style="margin-top:18px">Our approach</h3>
+        <p class="muted">We operate via a network of foster homes and a small intake facility. Cats receive vet exams, vaccinations, microchipping, spay/neuter when appropriate, and behaviour support before being listed for adoption.</p>
+
+        <h3 style="margin-top:18px">Values</h3>
+        <ul class="muted">
+          <li>Compassion — for cats and people</li>
+          <li>Transparency — about fees and medical needs</li>
+          <li>Community — working with local partners</li>
+        </ul>
+      </article>
+
+      <aside class="card" aria-labelledby="help-heading">
+        {{!-- <h2 id="help-heading">How you can help</h2>
+        <div class="actions">
+          <a class="btn btn-primary" href="#adopt" role="button">Adopt a cat</a>
+          <a class="btn btn-outline" href="#foster" role="button">Become a foster</a>
+          <a class="btn btn-outline" href="#donate" role="button">Donate</a>
+          <a class="btn btn-outline" href="#volunteer" role="button">Volunteer</a>
+        </div> --}}
+
+        <h3 style="margin-top:14px">Contact</h3>
+        <p class="muted" style="margin:0">Email: <a href="mailto:hello@catshelter.example">hello@catshelter.example</a><br>Phone: <span class="muted">+1 (555) 123-4567</span></p>
+
+        {{!-- <h3 style="margin-top:14px">Quick form</h3>
+        <form aria-label="Contact form" onsubmit="event.preventDefault();alert('Thanks — we\'ll get back to you!')">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <label class="muted" for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" style="padding:8px;border-radius:8px;border:1px solid #e6e9ee">
+            <label class="muted" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" style="padding:8px;border-radius:8px;border:1px solid #e6e9ee">
+            <label class="muted" for="message">Message</label>
+            <textarea id="message" name="message" rows="3" placeholder="How can we help?" style="padding:8px;border-radius:8px;border:1px solid #e6e9ee"></textarea>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </div>
+        </form> --}}
+      </aside>
+    </section>
+
+    <section style="margin-top:20px">
+      <div class="card">
+        <h2>Meet the team</h2>
+        <div class="team">
+          <div class="member"><div class="avatar">AM</div><div><strong>Ana Morales</strong><div class="muted">Founder &amp; Program Director</div></div></div>
+          <div class="member"><div class="avatar">RJ</div><div><strong>Ravi Joshi</strong><div class="muted">Lead Vet</div></div></div>
+          <div class="member"><div class="avatar">LK</div><div><strong>Lina K.</strong><div class="muted">Volunteer Coordinator</div></div></div>
+          <div class="member"><div class="avatar">TM</div><div><strong>Tess Morgan</strong><div class="muted">Foster Lead</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Cat Shelter — Building kinder lives for cats. Registered charity number: 12345678</p>
+    </footer>
+  </main>
+</body>

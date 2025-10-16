@@ -1,0 +1,137 @@
+.container {
+    max-width: 980px;
+    margin: 48px auto;
+    padding: 24px
+}
+
+/* header{display:flex;align-items:center;gap:16px} */
+.logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, lightskyblue, lightskyblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: blue;
+    box-shadow: var(--shadow)
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0
+}
+
+p.lead {
+    color: var(--muted);
+    margin: 6px 0 24px
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 20px
+}
+
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow)
+}
+
+.stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px
+}
+
+.stat {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    background: lightskyblue;
+    text-align: center
+}
+
+.stat strong {
+    display: block;
+    font-size: 20px
+}
+
+.team {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap
+}
+
+.member {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, lightskyblue, lightskyblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: blue
+}
+
+.muted {
+    color: var(--muted)
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: blue
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #e6e9ee;
+    color: var(--muted)
+}
+
+footer {
+    margin-top: 28px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px
+}
+
+@media (max-width:880px) {
+    .grid {
+        grid-template-columns: 1fr
+    }
+
+    .container {
+        margin: 24px auto;
+        padding: 16px
+    }
+}

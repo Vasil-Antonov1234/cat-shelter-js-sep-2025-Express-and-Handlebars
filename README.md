@@ -31,9 +31,9 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add routes
  - [x] Add Body Parser
  - [x] Create movie
-  - [x] Add action
-  - [x] Add service
-  - [x] Add model method for creating movie
+ - [x] Add action
+ - [x] Add service
+ - [x] Add model method for creating movie
  - [x] Redirect after creation
  - [x] Add unique id for each cat
  ---
@@ -54,10 +54,10 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add dynamic breeds
  - [x] Show breed on cat create
  - [x] Add breed to db
- - [ ] Delete cat (shlter cat button)
-  - [x] Render catShelter page
-  - [ ] Delete cat from data.json
- - [ ] Show breed on cat edit (selected current breed) (not EASY)
+ - [x] Delete cat (shelter cat button)
+ - [x] Render catShelter page
+ - [x] Delete cat from data.json
+ - [x] Show breed on cat edit (selected current breed) (not EASY)
 
  ## Step 2 - MongoDB Database
 
@@ -139,17 +139,14 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Add creator as relation to Cats
  - [x] Add user as creator on cat create
  - [x] Show buttons only for creators
-
- ### Bonus
- - [x] Automatic login on register
-
+ 
  ## Step 4 - Error handling and validation
  - [x] Validate cat
  - [x] Validate breed
  - [x] Validate user
  - [ ] BONUS: Validate passwords in model
 
- ## Error handling
+ ### Error handling
  - [x] Add static error notification container
  - [x] User register error handling
  - [x] Render error container conditionally
@@ -158,3 +155,8 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] User login error handling
  - [x] Create cat error handling
  - [x] Breed create error handling
+
+ ### Bonuses
+ - [x] Automatic login on register
+ - [x] Add about page
+ - [x] Add dynamic page title
