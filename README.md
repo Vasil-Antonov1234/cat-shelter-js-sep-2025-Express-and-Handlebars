@@ -157,4 +157,4 @@ Recreate SoftUni JS Back End Course "Cat Shelter" using Express and Handlebars
  - [x] Extract get error message
  - [x] User login error handling
  - [x] Create cat error handling
- - [ ] Breed create error handling
+ - [x] Breed create error handling

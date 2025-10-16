@@ -3,7 +3,8 @@ import { model, Schema } from "mongoose";
 const breedSchema = new Schema ({
     breed: {
         type: String,
-        required: [true, "Breed is required!"]
+        required: [true, "Breed is required!"],
+        minLength: [2, "Breed is too short!"]
     }
 });
 
