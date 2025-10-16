@@ -16,7 +16,12 @@ authController.post("/register", isGuest, async (req, res) => {
         res.cookie("auth", token);
         res.redirect("/");
     } catch (error) {
-        const errorMessage = Object.values(error.errors).at(0).message;
+        let errorMessage = error.message
+
+        if (error.name === "ValidationError") {
+            errorMessage = Object.values(error.errors).at(0).message;
+        }
+        
         res.render("auth/register", { error: errorMessage, user: userData });
     };
 
